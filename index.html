@@ -1,15 +1,19 @@
 <html>
 	<head>
-		<title>Marlon Dias Resume</title>
+		<title>Marlon Dias' DevBox</title>
 		<link rel='stylesheet' type='text/css' href='stylesheet.css'/>
         <script type='text/javascript' src='script.js'></script>
 	</head>
 	<body>
 		<div>
-			<p>Hello GitHub and CodeAnywhere!</p>
-			<p id="pos1"></p>
+			<h1>Hello GitHub and CodeAnywhere!</h1>
+			<p id="p1"></p>
+			<p id="p2"></p>
 			<script>
-				document.getElementById("pos1").innerHTML = "Area de circulo de raio 10 = "+ new Circle(10).area() + "!"; 
+				var circle = new Circle(10);
+				document.getElementById("p1").innerHTML = "Area de circulo de raio 10 = "+ circle.area().toFixed(2) + "!"; 
+				circle.setRadius(20);
+				document.getElementById("p2").innerHTML = "Se mudar raio para 20, area passa a ser "+ circle.area().toFixed(2) + "!"; 
 			</script>
 			</p>
 		</div>
